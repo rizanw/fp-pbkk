@@ -25,18 +25,24 @@ SECRET_KEY = '#up2cz%wy90&w3*@m=c$j-254z3ds@dzl(qa2o^pv=l&z@e2-h'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'localhost',
+    '.ngrok.com',
+]
 
 
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.admin',
+    # 'django.contrib.admin',
+    'material.admin',
+    'material.admin.default',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'kawal.apps.KawalConfig',
 ]
 
 MIDDLEWARE = [
