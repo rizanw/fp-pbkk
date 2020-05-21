@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'localhost',
-    '.ngrok.io',
+    '165.22.241.36',
     '.rzndwb.xyz', 
 ]
 
@@ -125,3 +125,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = "/home/rzndwb/fp-pbkk/backend/static/"

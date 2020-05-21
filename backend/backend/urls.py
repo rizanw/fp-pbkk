@@ -22,3 +22,4 @@ admin.site.site_title = 'Kawal APD'
 urlpatterns = [
     path('', admin.site.urls),
 ]
+
