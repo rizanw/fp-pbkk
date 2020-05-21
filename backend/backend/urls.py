@@ -18,6 +18,7 @@ from django.urls import path
 
 admin.site.site_header = "Kawal APD"
 admin.site.site_title = 'Kawal APD'
+admin.site.site_url = None
 
 urlpatterns = [
     path('', admin.site.urls),
