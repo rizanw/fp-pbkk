@@ -16,6 +16,7 @@ class APD(ModelBase):
 
 class Hospital(ModelBase):
     address = models.CharField(max_length=140)
+    verified = models.BooleanField(default=False)
 
 
 class Transaction(models.Model):
