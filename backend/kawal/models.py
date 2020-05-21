@@ -11,10 +11,18 @@ class ModelBase(models.Model):
 
 
 class APD(ModelBase):
+    class Meta:
+        verbose_name = "Alat Pelindung Diri"
+        verbose_name_plural = "Alat Pelindung Diri"
+
     pass
 
 
 class Hospital(ModelBase):
+    class Meta:
+        verbose_name = "Rumah Sakit"
+        verbose_name_plural = "Rumah Sakit"
+
     address = models.CharField(max_length=140)
     verified = models.BooleanField(default=False)
 
@@ -23,6 +31,10 @@ class Transaction(models.Model):
     class Type(models.TextChoices):
         INPUT = '1', 'Pemasukan'
         REQUEST = '2', 'Permintaan'
+
+    class Meta:
+        verbose_name = "Transaksi"
+        verbose_name_plural = "Transaksi"
 
     hospital = models.ForeignKey(Hospital, on_delete=models.CASCADE)
     type = models.CharField(max_length=2, choices=Type.choices,
